@@ -3,59 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Davlinfo</title>
+  <title>Эльер про макс</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #1e1e2f;
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      background: #4a90e2;
-      padding: 20px 0;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-    main {
+      background: #0a0a0a;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 40px 20px;
     }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      width: 100%;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+    .left {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+    .left img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #00d6ff66;
+    }
+    .right {
+      flex: 1;
+      min-width: 300px;
+    }
+    .right h1 {
+      font-size: 42px;
+      color: #00d6ff;
+      margin-bottom: 20px;
+    }
+    .right p {
+      font-size: 18px;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
     .btn {
-      background-color: #00c896;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
+      display: inline-block;
+      background-color: #00d6ff;
+      color: #000;
       text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 12px;
+      margin-top: 8px;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px #00d6ff55;
     }
     .btn:hover {
-      background-color: #00a97a;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #aaa;
+      background-color: #00aacc;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Добро пожаловать на Davlinfo</h1>
-  </header>
 
-  <main>
-    <p>Это мой сайт, созданный с помощью GitHub Pages! 🚀</p>
-    <a class="btn" href="https://chat.openai.com" target="_blank">Перейти в ChatGPT</a>
-  </main>
+  <div class="container">
+    <div class="left">
+      <img src="https://i.postimg.cc/9zpwqSXc/image.jpg" alt="Фото">
+    </div>
+    <div class="right">
+      <h1>Эльер</h1>
+      <p>Новый уровень технологий. Лёгкий. Мощный. Уникальный.  
+         Добро пожаловать в будущее с Davlinfo 🔥</p>
+      <a class="btn" href="https://t.me/Deegreat34" target="_blank">Telegram</a>
+      <a class="btn" href="https://tiktok.com/@davit0627" target="_blank">TikTok</a>
+    </div>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Davlinfo. Все права защищены.</p>
-  </footer>
 </body>
 </html>
