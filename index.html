@@ -1,86 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>продажа</title>
+  <meta charset="UTF-8">
+  <title>Продажа</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5f5f5;
-    }
-
-    .container {
+      background: #f4f4f4;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      max-width: 800px;
+      width: 100%;
+    }
+    .photo {
+      flex: 1;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .text {
+      flex: 1;
       padding: 20px;
     }
-
-    .image-box {
-      flex: 1;
-      min-width: 300px;
-      text-align: center;
-    }
-
-    .image-box img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    .text-box {
-      flex: 1;
-      min-width: 300px;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      color: #222;
-    }
-
-    p {
-      font-size: 1.2em;
-      color: #444;
-    }
-
-    .socials {
+    .social {
       margin-top: 20px;
-      font-size: 1em;
-      color: #555;
     }
-
-    .socials a {
-      color: #0077ff;
+    .social a {
+      margin-right: 15px;
       text-decoration: none;
-      margin-right: 10px;
-    }
-
-    .socials a:hover {
-      text-decoration: underline;
+      color: #0077cc;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="image-box">
-      <img src="https://postimg.cc/tnqrcJYV" alt="Моё фото">
+    <div class="photo">
+      <img src="https://i.postimg.cc/WzrQhJVS/IMG-20250129-131918-279.jpg" alt="Моё фото">
     </div>
-    <div class="text-box">
-      <h1>Добро пожаловать!</h1>
+    <div class="text">
+      <h2>Привет! 👋</h2>
       <p>На картанке вы видите один из моих экземпляров (он еще девственник) готов продать его девство за приличные деньги (его тг снизу)</p>
-
-      <div class="socials">
-  Мои соцсети:  
-  <a href="https://t.me/Deegreat34" target="_blank">Мой Telegram</a> |
-  <a href="https://t.me/" target="_blank">Обращайтесь 24/7 </a> |
-</div>
+      <div class="social">
+        <a href="https://t.me/Deegreat34" target="_blank">Telegram</a>
+        <a href="https://t.me/@shshsh_202" target="_blank">ТГ девственика</a>
+      </div>
     </div>
   </div>
 </body>
-
+</html>
